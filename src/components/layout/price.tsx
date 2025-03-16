@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-export default function PriceSeg({network}) {
-    const networks = {
+export default function PriceSeg({network} : {network: string }) {
+    const networks: Record<string, string> = {
         ethereum: "/assets/ethereum.png",
         polygon: "/assets/polygon.png",
         binance: "/assets/binance.png",
